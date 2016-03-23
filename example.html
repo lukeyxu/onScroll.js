@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>onScroll.js Example</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="onScroll.js"></script>
+<style type="text/css">
+.sampleblock{
+	width: 500px;
+	height: 700px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+</style>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$('#target').onScroll(function(){
+		alert('The callback function triggered!');
+	})
+});
+</script>
+<body>
+<div class="sampleblock"></div>
+<div class="sampleblock"></div>
+<div class="sampleblock"></div>
+<div class="sampleblock" id="target"></div>
+
+</body>
+</html>
